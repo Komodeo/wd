@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Francisco Mousinho, Tin Po CHAN, Grant Brown">
+    <meta name="description" content="Jurassic Future Offical Website">
+    <title>Jurassic Future Theme Park</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- 
+      Wireframes by Francisco Mousinho, Tin Po CHAN
+      Pseudocode (Wireframes Markup) by Tin Po CHAN
+      HTML skeleton by Grant Brown, Tin Po CHAN
+        -->
+
+    <!--Loading JavaScript file-->
+    <script src="js/script.js"></script>
+    <!--Show alter if the browser does not support JavaScript-->
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+    <!--Begin of the header section -->
+    <header>
+
+      <!--Begin of the COVID Banner -->
+      <div id="banner">
+        <strong>ALERT: All visitors must submit to decontamination!</strong>
+      </div>
+      <!--End of the COVID Banner -->
+
+      <!--Begin of the Global top nav bar -->
+      <nav class="nav-section">
+
+        <!--Logo with the url link of homepage -->
+        <a href="index.html">
+          <img src="img/logo.png" alt="Jurassic Future logo" id="logo" />
+        </a>
+
+        <!--Menu option with url link -->
+        <div class="nav-menu">
+          <a href="direction.html">How to get here</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+
+      </nav>
+      <!--End of the Global top nav bar -->
+      
+    </header>
+    <!--End of the header section -->
+
+    <!--Begin of the main section -->
+    <main>
+
+      <!--Begin of the Ticket purchase form -->
+      <form class="purchase-form-section">
+        <fieldset>
+
+          <!--Form title -->
+          <div class="form-title">
+            What are you looking for?
+          </div>
+
+          <!--From content -->
+          <div class="form-content">
+
+            <!--From Label -->
+            <label for="type">Ticket Type:</label>
+            <!--From options -->
+            <select name="type" id="type">
+              <optgroup label="Single Entry">
+                <option value="interstellar">Interstellar Pass</option>
+                <option value="galactic">Galactic Pass</option>
+              </optgroup>
+              <optgroup label="Year Pass">
+                <option value="universal">Universal Pass</option>
+                <option value="multiversal">Multiversal Pass</option>
+              </optgroup>
+            </select>
+
+            <!--From Label -->
+            <label for="date">Date:</label>
+            <!--From Input -->
+            <input type="date" class="input-date" id="date">
+
+            <!--From Label -->
+            <label for="adults">Adults:</label>
+            <!--From Input -->
+            <input type="number" class="input-num" min="0" id="adults">
+
+            <!--From Label -->
+            <label for="children">Children:</label>
+            <!--From Input -->
+            <input type="number" class="input-num" min="0" id="children">
+
+            <!--From Submit Button -->
+            <input type="submit" id="buy" value="Buy" class="button">
+          </div>
+
+        </fieldset>
+      </form>
+      <!--End of the Ticket purchase form -->
+
+    </main>
+    <!--End of the main section -->
+
+
+    <!--Begin of the Image slideshow-->
+    <div class="slideshow-container">
+
+      <!--Control button - Left-->
+      <button onclick="leftArrow()">&lt;</button>
+
+      <!--Image Loader -->
+      <figure>
+        <img id="slider" src="img/slider-1.jpg" alt="Dinosaur Theme Park!">
+        <figcaption id="caption">Dinosaur Theme Park!</figcaption>
+      </figure>
+
+      <!--Control button - Right -->
+      <button onclick="rightArrow()">></button>
+
+    </div>
+    <!--End of the Image slideshow-->
+
+    <br />
+    <!-- The dots, controlled by the slideshow js function-->
+    <div class="dot-container">
+      <span class="dot" id="dot-1"></span>
+      <span class="dot" id="dot-2"></span>
+      <span class="dot" id="dot-3"></span>
+    </div>
+    
+    <!--Begin of the description -->
+    <div class="description-container">
+
+      <!--Begin of the description item box -->
+      <div class="description-item">
+
+        <!-- Title of the description item boxt -->
+        <h3>Events</h3>
+
+        <!-- Content of the description item boxt -->
+        <details>
+          <summary>CHRISTMAS AT PARADISE</summary>
+          <p>We have the exciting announcement that Santa is on his way! Santa’s Grotto is a first-come, first-serve queuing system. We cannot guarantee everyone will be able to meet Santa on the day of your visit.</p>
+        </details>
+        <br />
+        <details>
+          <summary>CELEBRATION OF SPEEDWAY</summary>
+          <p>We will be celebrating the 94th Anniversary of Speedway in the park.</p>
+        </details>
+      </div>
+      <!--End of the description item box -->
+
+      <!--Begin of the description item box -->
+      <div class="description-item">
+
+        <!-- Title of the description item boxt -->
+        <h3>News</h3>
+
+        <!-- Content of the description item boxt -->
+        <details>
+          <summary>ARRIVAL OF CHRISTMAS AT PARADISE!</summary>
+          <p>We are excited to announce Santa is at his magical grotto and has been meeting visitors already on Saturdays and Sundays.</p>
+        </details>
+        <br />
+        <details>
+          <summary>INTERNATIONAL VOLUNTEER DAY</summary>
+          <p>We would like to take this moment to thank all our 114 volunteers across the site, from zookeeping to gardening to the volunteers who run our conservation cabin.</p>
+        </details>
+      </div>
+      <!--End of the description item box -->
+
+      <!--Begin of the description item box -->
+      <div class="description-item">
+
+        <!-- Title of the description item boxt -->
+        <h3>Attractions</h3>
+        <details>
+
+          <!-- Content of the description item boxt -->
+          <summary>WORLD OF DINOSAURS</summary>
+          <p>Meet our life-size, animatronic Dinosaurs at our incredible World of Dinosaurs attraction. It features 30 life-size, moving and roaring dinosaurs – a real thrill for any dinosaur adventurer!</p>
+        </details>
+        <br />
+        <details>
+          <summary>TUMBLE JUNGLE</summary>
+          <p>If you’re looking for soft play areas then look no further. Let us help you stop, relax, and enjoy a coffee and a tasty snack in a comfortable and stylish parent’s area while your kids go wild in our superb indoor soft play zone.</p>
+        </details>
+      </div>
+      <!--End of the description item box -->
+
+    </div>
+    <!--End of the description -->
+
+    <!--Begin of the Footer-->
+    <footer>
+      <small>Jurassic Future, All Rights Reserved</small>
+    </footer>
+    <!--End of the Footer-->
+    
+  </body>
+</html>
